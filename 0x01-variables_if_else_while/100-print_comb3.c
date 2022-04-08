@@ -6,6 +6,7 @@
  *
  * Description: 100-print_comb3.c
  *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
