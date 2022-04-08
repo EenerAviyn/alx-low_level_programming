@@ -4,6 +4,8 @@
 
 /*
  * main - main entry point
+ *
+ * Description: main function
  * Description: print for positive or negative.
  *
  * Return: Always 0 (Success)
