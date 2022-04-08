@@ -3,9 +3,9 @@
 #include <time.h>
 
 /*
- *
  * main - main entry point
- * Description: print whether the number stored in the variable n is positive or negative.
+ * Description: print for positive or negative.
+ *
  * Return: Always 0 (Success)
  */
 
