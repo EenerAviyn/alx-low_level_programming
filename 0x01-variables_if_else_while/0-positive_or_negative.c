@@ -5,7 +5,7 @@
 /*
  *
  * main - Entry point
- * Description: 0-positive_or_negative.c
+ * Description: print whether the number stored in the variable n is positive or negative.
  * Return: Always 0 (Success)
  */
 
