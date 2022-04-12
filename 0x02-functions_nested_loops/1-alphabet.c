@@ -11,8 +11,7 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-void print_aphabet(void)
+void print_alphabet(void)
 {
 	printf("putchar(a..z)");
-	return (0);
 }
