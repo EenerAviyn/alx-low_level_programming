@@ -6,15 +6,10 @@
  */
 void print_times_table(int n)
 {
-	int a = 0;
-	int rep;
-	int b;
-	
-	if (n < 0 || n > 15)
-	{
-		return;
-	}
+	int a = 0, b, rep;
 
+	if (n < 0 || n > 15){
+		return;
 	while (a <= n)
 	{
 		for (b = 0; b <= n; b++)
