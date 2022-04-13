@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: print alphabet in lowercase followed by new line
  *
@@ -9,6 +10,7 @@
 void print_alphabet(void)
 {
 	char c = 'a';
+
 	while (c <= 'z')
 	{
 		_putchar(c);
