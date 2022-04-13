@@ -2,9 +2,7 @@
 /**
  * int _islower(int c) - Entry point
  *
- * Description: check for lower case letters
- *
- * _islower - check for lower case letters
+ * function _islower - check for lower case letters
  *
  * @c: character to check letter case
  *
