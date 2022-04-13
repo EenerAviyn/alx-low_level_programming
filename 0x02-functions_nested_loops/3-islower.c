@@ -8,15 +8,5 @@
  */
 int _islower(int c)
 {
-	char c = 'a';
-	while (c <= 'z')
-	{
-		if (c.islower == true)
-		{
-			return (1);
-		}
-		else 
-			return (0);
-	c++;
-	}
+	return ( c >= 97 && c <= 122);
 }
