@@ -7,21 +7,19 @@
  *
  * Return: void
  */
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
 void print_alphabet_x10(void)
 {
 	int j = 0;
-	while (j <= 10)
+	char i;
+
+	while (j < 10)
 	{
 		char i = 'a';
-		while (i < 'z')
+		while (i <= 'z')
 		{
-			putchar(i);
+			_putchar(i);
 			i++;
 		}
+		_putchar('\n');
 		j++;
 	}			
