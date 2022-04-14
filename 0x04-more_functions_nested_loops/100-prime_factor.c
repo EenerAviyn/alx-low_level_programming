@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <math.h>
 /**
  * main - entry point
  * Description: finf and print largest prime factor of the number then a new liine
