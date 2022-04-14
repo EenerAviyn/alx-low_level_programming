@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * more_numbers - print 10 times the numbers
- * Return: 0
+ * Return: no return
  */
 void more_numbers(void)
 {
@@ -17,7 +17,7 @@ void more_numbers(void)
 			f = k / 10;
 			l = k % 10;
 			if (k >= 10)
-				_putchar(f + '0');
+			_putchar(f + '0');
 			if (k == 10)
 				l = 0;
 			_putchar(l + '0');
