@@ -7,12 +7,5 @@
  */
 int _isupper(int c)
 {
-	char c = 'c';
-
-	if (c == 99)
-	{
-		return (1);
-	}
-	else
-		return (0);
+	return (c >= 'A' && c <= 'Z');
 }
