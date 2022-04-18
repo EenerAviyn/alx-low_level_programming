@@ -1,11 +1,9 @@
 #include <stdio.h>
-
-/*
+/**
  * main - causes an infinite loop
  * Description: comment out code causing infinite loop
  * Return: 0
  */
-
 int main(void)
 {
 	int i;
