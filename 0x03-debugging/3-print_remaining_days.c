@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * convert_day - converts day of month to day of year
  * print_remaining_days - takes a day and prints remaining days left in the year
  * @month: month in number format
  * @day: day of month
+ * @year: year
  * Return: day of year
  */
 void print_remaining_days(int month, int day, int year)
