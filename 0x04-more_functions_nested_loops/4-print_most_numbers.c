@@ -3,7 +3,7 @@
 
 /**
  * print_most_numbers - print numbers 0 to 9 then new line except 2 and 4
- * 
+ *
  * Return: numbers
  */
 
