@@ -1,8 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * more_numbers - print 10 times the numbers
  * Return: no return
  */
+
 void more_numbers(void)
 {
 	char i;
