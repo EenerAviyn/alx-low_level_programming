@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * print_triangle - print triangle then new line
  * @size: size of rectangle
  * @# to print triangle
  * Return: Always 0
  */
+
 void print_triangle(int size)
 {
 	if (size <= 0)
@@ -27,7 +29,7 @@ void print_triangle(int size)
 				_putchar('#');
 			}
 
-			_putchat('\n');
+			_putchar('\n');
 		}
 	}
 }
