@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * convert_day - converts day of month to day of year
  * @month: month in number format
