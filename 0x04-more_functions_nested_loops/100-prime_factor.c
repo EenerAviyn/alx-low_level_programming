@@ -1,10 +1,11 @@
-#include "main.h"
-#include <math.h>
+#include <stdio.h>
+
 /**
  * main - entry point
- * Description: finf and print largest prime factor of the number then a new liine
+ * Description: find and print largest prime factor of the number then a new liine
  * Return: Always 0
  */
+
 int main(void)
 {
 	long int n;
