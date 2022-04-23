@@ -2,40 +2,40 @@
 #include <stdio.h>
 
 /**
- * print_buffer - funtion that prints a buffer
- * @b: buffer
- * @size: size of buffer
- * Return: no return
+ * print_buffer - prints a buffer
+ * @b: buffer.
+ * @size: size of buffer.
+ * Return: no return.
  */
-
 void print_buffer(char *b, int size)
 {
-	int m, n, p;
+	int j, k, l;
+
 	if (size <= 0)
 		printf("\n");
 	else
 	{
-		for (m = 0; m < size; m += 10)
+		for (j = 0; j < size; j += 10)
 		{
 			printf("%.8x:", j);
-			for(n = m; n < m + 10; n++)
+			for (k = j; k < j + 10; k++)
 			{
-				if (n % 2 == 0)
+				if (k % 2 == 0)
 					printf(" ");
-				if (n < size)
-					printf("%.2x", *(b + n));
+				if (k < size)
+					printf("%.2x", *(b + k));
 				else
 					printf("  ");
 			}
 			printf(" ");
-			for (p = m; p < m + 10; p++)
+			for (l = j; l < j + 10; l++)
 			{
-				if (p >= size)
+				if (l >= size)
 					break;
-				if (*(b + p) < 32 || *(b + p) > 126)
+				if (*(b + l) < 32 || *(b + l) > 126)
 					printf("%c", '.');
 				else
-					printf("%c", *(b + p));
+					printf("%c", *(b + l));
 			}
 			printf("\n");
 		}
