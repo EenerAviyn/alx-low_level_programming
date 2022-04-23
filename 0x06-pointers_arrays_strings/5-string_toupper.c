@@ -7,7 +7,7 @@
  * Return: the pointer to dest
  */
 
-char *string_toupper(char *si)
+char *string_toupper(char *s)
 {
 	int count = 0;
 
