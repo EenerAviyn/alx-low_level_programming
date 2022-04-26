@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - function that locates a substring
- * @haystack: string
- * @needle: substring
+ * _strpbrik - function that locates a substring
+ * @s: first string
+ * @accept: second string
  * Return: a pointer to byte in s that matches
  * one of the bytes in accept or NULL if none is found
  */
