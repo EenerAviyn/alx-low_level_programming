@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_chessboard - prints the chessboard
@@ -14,9 +15,9 @@ void print_chessboard(char (*a)[8])
 		if (i % 8 == 0 && i != 0)
 		{
 			m = i;
-			putchar('\n');
+			_putchar('\n');
 		}
-		putchar(a[i / 8][i - m]);
+		_putchar(a[i / 8][i - m]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
