@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strstr - function that locates a substring
+ * _strpbrk - function that locates a substring
  * @haystack: string
  * @needle: substring
  * Return: a pointer to byte in s that matches
