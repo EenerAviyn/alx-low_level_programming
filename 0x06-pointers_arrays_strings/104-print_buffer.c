@@ -1,29 +1,32 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_buffer - funtion that prints a buffer
- * @b: buffer
- * @size: size of buffer
- * Return: no return
+ * print_number - printing number with puts
+ *
+ * @n: input int
  */
-
-void print_buffer(char *b, int size)
+void print_number(int n)
 {
-	int m, n, p;
-	if (size <= 0)
-		printf("\n");
-	else
-	{
-		for (m = 0; m < size; m += 10)
-		{
-			printf("%.8x:", j);
-			for(n = m; n < m + 10; n++)
-			{
-				if (k % 2 == 0)
-					printf(" ");
-				if (k < size)
-					printf("%.2x", *(b + n));
-				else
-					printf("  ");
+	int count = 0, pow = 1;
+	unsigned int num = n;
 
+	if (n < 0)
+	{
+		_putchar('_');
+		num = -n;
+	}
+	while (n != 0)
+	{
+		n /= 10;
+		count++;
+	}
+	while (count > 1)
+	{
+		pow *= 10;
+		count--;
+	}
+	while (pow >= 1)
+	{
+		_putchar(num / pow % 10 + '0');
+		pow /= 10;
+	}
+}
