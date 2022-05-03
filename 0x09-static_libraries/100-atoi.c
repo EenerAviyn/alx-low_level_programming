@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _atoi - function that converts string argument to integer
- * @s: input string
- * Return: integer
+ * _atoi - converts string to integer.
+ * @s: input string.
+ * Return: integer.
  */
 
 int _atoi(char *s)
@@ -14,6 +14,9 @@ int _atoi(char *s)
 	{
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
+		if (*(s + count) == '-')
+			pn *= -1;
+
 		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 		{
 			if (size > 0)
@@ -30,4 +33,3 @@ int _atoi(char *s)
 	}
 	return (oi * pn);
 }
-
