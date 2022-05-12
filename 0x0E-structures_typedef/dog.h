@@ -16,7 +16,8 @@ typedef struct dog dog_t;
  * stores its name, age and owner
  */
 
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
@@ -28,4 +29,3 @@ dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
 #endif
-
