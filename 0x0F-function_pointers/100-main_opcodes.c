@@ -3,7 +3,7 @@
 
 /**
  * main - prints its own opcodes
- * @argc: number of arguments
+ * @argc: count of arguments
  * @argv: array of arguments
  * Return: Always 0 (Success)
  */
