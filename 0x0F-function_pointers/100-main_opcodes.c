@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - entry point
+ * main - entry point of program
  * @argc: argument count
  * @argv: argument vector
  * Return: Always 0
