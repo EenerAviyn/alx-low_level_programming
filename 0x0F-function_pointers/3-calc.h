@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
- * struct op -struct op
+ * struct op - struct op
  * @op: operator
  * @f: function associated
  */
