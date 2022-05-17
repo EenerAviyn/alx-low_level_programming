@@ -69,6 +69,7 @@ void print_int(va_list arg)
  * print_all - function that prints anything
  * @format: list of types of arguments passed to function
  * @...: variable numbers to be printed
+ * Description: argument not of type char, int, float or char * is ignored
  */
 
 void print_all(const char * const format, ...)
