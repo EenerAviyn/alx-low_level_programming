@@ -62,7 +62,7 @@ void print_int(va_list arg)
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%dd", num);
+	printf("%d", num);
 }
 
 /**
@@ -78,17 +78,20 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	printer_t funcs[] = {
 		{"c", print_char},
-		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string}
+		{"s", print_string},
+		{"i", print_int}
 	};
+	
 	va_start(args, format);
+	
 	while (format && (*(format + i)))
 	{
 		j = 0;
 
 		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
 			j++;
+		
 		if (j < 4)
 		{
 			printf("%s", separator);
@@ -100,4 +103,3 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(args);
 }
-
