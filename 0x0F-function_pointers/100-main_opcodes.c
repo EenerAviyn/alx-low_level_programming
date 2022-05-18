@@ -3,40 +3,33 @@
 
 /**
  * main - entry point
- * @argc: number of arguments
- * @argv: count of arguments
- *
- * Return: Always 0 (Success)
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: Always 0
  */
+
 int main(int argc, char *argv[])
 {
-	int bytes, i;
-	char *arr;
+	char *opc = (char *) main;
+	int i, nbytes;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
+	nbytes = atoi(argv[1]);
+	if (nbytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-
-	arr = (char *)main;
-
-	for (i = 0; i < bytes; i++)
+	for (i = 0; i < nbytes; i++)
 	{
-		if (i == bytes - 1)
-		{
-			printf("%02hhx\n", arr[i]);
-			break;
-		}
-		printf("%02hhx ", arr[i]);
+		printf("%02x", opc[i] & 0xFF);
+		if (i != nbytes - 1)
+			printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
