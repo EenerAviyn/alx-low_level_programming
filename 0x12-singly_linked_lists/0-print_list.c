@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_list - function that prints all elements of list_t
- * @list_t: list
+ * @h: poimter to list_t list to print
  * Return: number of nodes
  */
 
