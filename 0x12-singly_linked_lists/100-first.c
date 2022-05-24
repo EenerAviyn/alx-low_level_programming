@@ -1,10 +1,9 @@
-#include <stdlib.h>
 #include <stdio.h>
 
-void first(void) __attrribute__((constructor));
+void first(void) __attribute__((constructor));
 
 /**
- * first - prints phase before main is executed
+ * first - prints phrase before main is executed
  */
 
 void first(void)
