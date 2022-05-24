@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * *add_node_end - function that adds new node to end of list
- * @head: first node
- * @str: string
- * Return: address of new element or NULL
+ * add_node_end - adds a new node at end of linked list
+ * @head: double pointer to the list_t list
+ * @str: string to put in the new node
+ * Return: address of the new element, or NULL if it failed
  */
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -25,7 +25,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
-	
+
 	if (*head == NULL)
 	{
 		*head = new;
