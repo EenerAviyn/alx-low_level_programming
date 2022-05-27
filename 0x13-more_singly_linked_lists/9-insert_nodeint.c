@@ -9,31 +9,36 @@
  * Return: address of new node or NULL
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *temp, *copy = *head;
-	unsigned int node;
+	listint_t *new_node, *temp;
+	unsigned int i = 0;
 
-	if (copy == NULL)
-		return (-1);
-
-	if (index == 0)
+	if (*head == NULL && idx != 0)
+		return (NULL);
+	if (idx != 0)
 	{
-		*head = (*head)->next;
-		free(copy);
-		return (1);
+	temp = *head;
+	for (; i < idx - 1 && temp != NULL; i++)
+		temp = temp->next;
+	if (temp == NULL)
+		return (NULL);
 	}
-
-	for (node = 0; node < (index - 1); node++)
+	
+	new_node = malloc(sizeof(listint_t));
+	
+	if (new_node == NULL)
+		return (NULL);
+	new_node->n = n;
+	
+	if (idx == 0)
 	{
-		if (copy->next == NULL)
-			return (-1);
-
-		copy = copy->next;
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
 	}
-
-	temp = copy->next;
-	copy->next = tmp->next;
-	free(tmp);
-	return (1);
+	
+	new_node->next = temp->next;
+	temp->next = new_node;
+	return (new_node);
 }
