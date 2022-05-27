@@ -43,7 +43,6 @@ size_t looped_listint_len(const listint_t *head)
 	}
 	return (0);
 }
-
 /**
  * print_listint_safe - function that prints linked list
  * @head: pointer to head
