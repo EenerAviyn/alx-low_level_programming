@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 /**
- * struct listsint_s - singly linked list
+ * struct listint_s - singly linked list
  * @n: integer
  * @next: pointer to next node
  * Description: node structure for singly linked list
