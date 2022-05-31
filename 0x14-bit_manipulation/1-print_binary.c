@@ -4,7 +4,6 @@
  * print_binary - function that prints binary representation
  * of number
  * @n: number to print in binary
- * Return: No return
  */
 
 void print_binary(unsigned long int n)
@@ -27,4 +26,3 @@ void print_binary(unsigned long int n)
 	if (!count)
 		_putchar('0');
 }
-
