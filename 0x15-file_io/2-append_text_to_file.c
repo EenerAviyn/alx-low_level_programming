@@ -3,8 +3,8 @@
 /**
  * append_text_to_file - function that appends text at end of
  * file
- * @filename: name of file
- * Text_content: NULL terminated string to add at end of file
+ * @filename: pointer to name of file
+ * text_content: NULL terminated string to add at end of file
  * Return: 1 or -1
  */
 
@@ -28,4 +28,3 @@ int append_text_to_file(const char *filename, char *text_content)
 	close(o)
 		return (1);
 }
-
