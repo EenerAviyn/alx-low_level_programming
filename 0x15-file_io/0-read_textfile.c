@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Reads a text file and prints it to POSIX stdout
- * @filename: A pointer to the name of the file
- * @letters: The number of letters function should read and print
- * Return: If the function fails or filename is NULL - 0.
+ * read_textfile - function that reads text file and prints
+ * it to POSIX standard output
+ * @filename:pointer to name of file
+ * @letters: number of letters to read and print
+ * Return: actual number of letters to read and print or 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -19,7 +20,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
-
 	o = open(filename, O_RDONLY);
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
@@ -31,6 +31,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	free(buffer);
 	close(o);
-
 	return (w);
 }
