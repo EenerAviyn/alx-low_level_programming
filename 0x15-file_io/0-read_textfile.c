@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
 
 /**
  * read_textfile - function that reads text file and prints
@@ -35,3 +33,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(o);
 	return (w);
 }
+
