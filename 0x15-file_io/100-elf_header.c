@@ -1,10 +1,10 @@
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <fcntl.h>
 #include <unistd.h>
-#include <stdio.h>
+#include <fcntl.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
@@ -18,9 +18,9 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - function that checks if file is ELF file
+ * check_elf - function to check if file is ELF file
  * @e_ident: pointer to array containing ELF magic numbers
- * Description: 98 exit code
+ * Description: if file is not ELF file exit with code 98
  */
 
 void check_elf(unsigned char *e_ident)
