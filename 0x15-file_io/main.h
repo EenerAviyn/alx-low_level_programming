@@ -1,8 +1,8 @@
 #ifndef _MAIN_H_
-#define _MAIN_H
+#define _MAIN_H_
 
 /**
- * Description: hedaer file containing function prototypes
+ * Description: header file containing function prototypes
  */
 
 #include <sys/types.h>
