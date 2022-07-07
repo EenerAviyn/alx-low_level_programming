@@ -18,4 +18,3 @@ void free_dlistint(dlistint__t *head)
 		head = next;
 	}
 }
-
