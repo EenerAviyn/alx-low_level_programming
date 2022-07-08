@@ -4,7 +4,7 @@
 /**
  * *get_dnodeint_at_index - function that returns nth node
  * of dlistint_t linked list
- * @index: index of node
+ * @index: index of a node
  * @head: pointer to start of linked list
  * Return: nth node or NULL
  */
